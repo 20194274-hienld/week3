@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./color.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="form">
+        <div class="title">Music box</div>
+        <div class="list">1. Choose a song</div>
+
+        <div class="dropdown">
+            <div class="select">
+                <div class="selected"></div>
+                <div class="caret"></div>
+            </div>
+            <ul class="menu">
+                <li src = "media/Mia & Sebastian’s Theme.mp3">Mia & Sebastian’s Theme</li>
+                <li src = "media/Game of Thrones.mp3">Game of Thrones</li>
+                <li src = "media/Rise.mp3">Rise</li>
+            </ul>
+            <span class="warning display-none">You need to choose a song first!</span>
+        </div>
+
+        <div class="list">2. Choose a theme</div>
+            <div class="input-container">
+                <input id="search" type="text" class="form-field" placeholder="Type something">
+            </div>
+        <button id="btnSearch" class="button-1">Search</button>
+    </div>
+
+    <audio>
+        <source src="" type="audio/mpeg">
+    </audio>
+
+    <div class="control display-none">
+            <button id="playPauseBTN" class="beauty-button" onclick="playPause()">Play &#9658;</button>
+            &nbsp;
+            &nbsp;
+            <button class="beauty-button" onclick="back()">Back</button>
+    </div>
+
+    <div class="out"></div>
+
+</body>
+
+<script src="./main.js"></script>
+
+</html>
